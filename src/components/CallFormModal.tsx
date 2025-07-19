@@ -51,8 +51,9 @@ const CallFormModal = ({ onClose }: Props) => {
     e: React.ChangeEvent<HTMLInputElement | HTMLSelectElement>
   ) => {
     const { name, value, type } = e.target;
-    const checked = type === "checkbox" ? (e.target as HTMLInputElement).checked : undefined;
-    const fieldValue = type === "checkbox" ? checked : value;
+    const fieldValue = type === "checkbox"
+      ? (e.target as HTMLInputElement).checked
+      : value;
     setForm((prev) => ({
       ...prev,
       [name]: fieldValue,
