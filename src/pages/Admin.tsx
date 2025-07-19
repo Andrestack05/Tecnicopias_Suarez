@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { supabase } from "../lib/supabase"; // Asegúrate de tener esta configuración exportada desde lib/supabase.ts
 
 type Llamada = {
@@ -123,7 +123,8 @@ const Admin = () => {
                   <td className="px-4 py-2">{item.telefono}</td>
                   <td className="px-4 py-2">{item.autoriza ? "Sí" : "No"}</td>
                   <td className="px-4 py-2">
-                    {new Date(item.creado || item.created_at).toLocaleString("es-CO")}
+                    {new Date(String(item.created_at)).toLocaleString("es-CO")}
+
                   </td>
                   <td className="px-4 py-2">
                     {item.atendido ? (
