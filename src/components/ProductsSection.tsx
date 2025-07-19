@@ -109,6 +109,9 @@ const Products = () => {
       <h2 className="text-4xl font-bold text-center text-green-400 mb-12">
         Nuestros Equipos
       </h2>
+      <p className="text-center text-gray-300 max-w-2xl mx-auto mb-12">
+        Cotiza hoy mismo tu equipo nuevo o remanufacturado. Con Tecnicopias Suárez obtienes 1 año de garantía directamente en el lugar de instalación, sin complicaciones!
+      </p>
       <div className="grid gap-10 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 max-w-7xl mx-auto items-start">
         {products.map((product, index) => (
           <ProductCard

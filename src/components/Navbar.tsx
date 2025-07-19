@@ -26,9 +26,13 @@ const Navbar = () => {
         <ul className="hidden md:flex gap-8 text-sm md:text-base items-center">
           <li><Link to="/" className="hover:text-[#FFC107] transition">Inicio</Link></li>
           <li><Link to="/productos" className="hover:text-[#FFC107] transition">Productos</Link></li>
-          <li><Link to="/nosotros" className="hover:text-[#FFC107] transition">Nosotros</Link></li>
-          <li><Link to="/contacto" className="hover:text-[#FFC107] transition">Contacto</Link></li>
-          <li><Link to="/admin" className="hover:text-[#FFC107] transition">Admin</Link></li>
+          <li><Link
+  to="/equipo"
+  className="text-white hover:text-green-300 transition-colors"
+>
+  Nuestro equipo
+</Link></li>
+          
 
           {/* Botón WhatsApp */}
           <li>

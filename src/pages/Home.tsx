@@ -1,7 +1,12 @@
+import { useState } from "react";
+import CallFormModal from "../components/CallFormModal"; // Asegúrate de que el archivo existe
+
 import { FaWhatsapp } from "react-icons/fa";
 import Footer from "../components/footer";
 
 const Home = () => {
+  const [showModal, setShowModal] = useState(false);
+
   return (
     <main className="relative w-full overflow-hidden">
 
@@ -86,6 +91,15 @@ const Home = () => {
   </div>
 </section>
 
+{/* Botón flotante "Te llamamos" */}
+<button
+  onClick={() => setShowModal(true)}
+  className="fixed bottom-6 right-6 z-50 bg-green-600 hover:bg-green-700 text-white px-4 py-3 rounded-full shadow-xl flex items-center gap-2"
+>
+  📞 Te llamamos
+</button>
+{/* Modal de formulario */}
+{showModal && <CallFormModal onClose={() => setShowModal(false)} />}
 
       {/* Footer */}
       <Footer />
