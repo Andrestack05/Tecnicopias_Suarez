@@ -2,10 +2,10 @@ import { FaInstagram, FaWhatsapp, FaPhone } from "react-icons/fa";
 
 const Footer = () => {
   return (
-    <footer className="bg-neutral-900 text-gray-300 py-10 px-6">
-      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-sm">
+    <footer className="bg-neutral-900 text-gray-300 py-10 px-4">
+      <div className="max-w-6xl mx-auto flex flex-col md:grid md:grid-cols-3 gap-8 text-sm">
         {/* Contacto principal */}
-        <div>
+        <div className="mb-8 md:mb-0">
           <h3 className="text-lg font-semibold text-white mb-2">Contacto</h3>
           <p>Calle 10 #5-45, Duitama, Boyacá</p>
           <p>Colombia</p>
@@ -15,7 +15,7 @@ const Footer = () => {
         </div>
 
         {/* Enlaces rápidos */}
-        <div>
+        <div className="mb-8 md:mb-0">
           <h3 className="text-lg font-semibold text-white mb-2">Enlaces</h3>
           <ul className="space-y-1">
             <li><a href="#nosotros" className="hover:underline">Nosotros</a></li>

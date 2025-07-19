@@ -60,19 +60,30 @@ const Navbar = () => {
       {menuOpen && (
         <div className="md:hidden bg-[#2E7D32] px-4 pb-4 text-white">
           <ul className="flex flex-col gap-4 pt-4 text-lg">
-            <li><Link to="/" onClick={() => setMenuOpen(false)}>Inicio</Link></li>
-            <li><Link to="/productos" onClick={() => setMenuOpen(false)}>Productos</Link></li>
-            <li><Link to="/nosotros" onClick={() => setMenuOpen(false)}>Nosotros</Link></li>
-            <li><Link to="/contacto" onClick={() => setMenuOpen(false)}>Contacto</Link></li>
-            <li><Link to="/admin" onClick={() => setMenuOpen(false)}>Admin</Link></li>
+            <li>
+              <Link to="/" onClick={() => setMenuOpen(false)}>
+                Inicio
+              </Link>
+            </li>
+            <li>
+              <Link to="/productos" onClick={() => setMenuOpen(false)}>
+                Productos
+              </Link>
+            </li>
+            <li>
+              <Link to="/equipo" onClick={() => setMenuOpen(false)}>
+                Nuestro equipo
+              </Link>
+            </li>
             <li>
               <a
-                href="https://wa.me/573001112222"
+                href="https://wa.me/573103681052"
                 target="_blank"
                 className="flex items-center gap-2 bg-white text-green-700 px-4 py-2 rounded-full font-semibold hover:bg-[#00e676] hover:text-white transition-all duration-300"
+                onClick={() => setMenuOpen(false)}
               >
                 <FaWhatsapp className="text-xl animate-pulse" />
-                WhatsApp
+                Cotizar
               </a>
             </li>
           </ul>

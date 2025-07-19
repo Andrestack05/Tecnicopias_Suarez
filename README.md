@@ -1,69 +1,54 @@
-# React + TypeScript + Vite
+# Tecnicopias Suárez
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Sitio web oficial de **Tecnicopias Suárez**, empresa especializada en venta, alquiler y mantenimiento de impresoras y multifuncionales. Contamos con productos Toshiba, Ricoh, Kyocera, y una amplia gama de insumos.
 
-Currently, two official plugins are available:
+## 🌐 Tecnologías empleadas
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **React** + **TypeScript**
+- **Tailwind CSS v4**
+- **Supabase** (base de datos)
+- **Vercel** (hosting)
+- **Iconografía:** React Icons
 
-## Expanding the ESLint configuration
+## 🧩 Funcionalidades destacadas
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- Diseño moderno y responsivo
+- Video animado de fondo en la página de inicio
+- Catálogo interactivo de multifuncionales Toshiba
+- Sección de insumos con cards informativas
+- Sección del equipo con tarjetas tipo perfil desplegables
+- Módulo de “¿Qué ofrecemos?” con servicios destacados
+- Formulario flotante de contacto: “Te llamamos”
+- Envío automático de solicitudes a Supabase
 
-```js
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+## 📁 Estructura del proyecto
 
-      // Remove tseslint.configs.recommended and replace with this
-      ...tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      ...tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      ...tseslint.configs.stylisticTypeChecked,
+├── public/
+│ ├── printer-background.mp4
+│ └── logos/
+├── src/
+│ ├── components/
+│ │ ├── Navbar.tsx
+│ │ ├── Footer.tsx
+│ │ ├── FormularioLlamada.tsx
+│ ├── pages/
+│ │ ├── Home.tsx
+│ │ ├── Productos.tsx
+│ │ ├── Insumos.tsx
+│ │ └── EquipoYServicios.tsx
+│ └── App.tsx
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+## 🚀 Despliegue
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+La página se encuentra desplegada en **Vercel**.  
+Dominio personalizado gestionado por **Hostinger**.
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 🧾 Licencia
 
-export default tseslint.config([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Este proyecto es de uso privado para Tecnicopias Suárez. Todos los derechos reservados.
+
+## Autor
+
+Andrés Suárez
+Sitio oficial: Tecnicopias Suárez
+GitHub: @Andrestack05

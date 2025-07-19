@@ -75,7 +75,7 @@ const ProductCard = ({
 
       {/* Botón de cotizar */}
       <a
-        href={`https://wa.me/573219508837?text=Hola%2C%20quiero%20cotizar%20el%20producto%20${encodeURIComponent(product.name)}`}
+        href={`https://wa.me/573103681052?text=Hola%2C%20quiero%20cotizar%20el%20producto%20${encodeURIComponent(product.name)}`}
         target="_blank"
         rel="noopener noreferrer"
         className="mt-6 inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold shadow-lg transition duration-300"

@@ -88,7 +88,7 @@ const InsumosSection = () => {
               {item.price}
             </p>
             <a
-              href={`https://wa.me/573219508837?text=Hola%2C%20quiero%20${encodeURIComponent(item.buttonLabel.toLowerCase())}%20sobre:%20${encodeURIComponent(item.name)}`}
+              href={`https://wa.me/573103681052?text=Hola%2C%20quiero%20${encodeURIComponent(item.buttonLabel.toLowerCase())}%20sobre:%20${encodeURIComponent(item.name)}`}
               target="_blank"
               rel="noopener noreferrer"
               className="absolute bottom-6 left-1/2 -translate-x-1/2 w-[80%] inline-flex items-center gap-2 bg-green-600 hover:bg-green-700 text-white px-5 py-2 rounded-full font-semibold shadow-lg transition duration-300 justify-center"
