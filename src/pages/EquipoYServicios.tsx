@@ -16,7 +16,7 @@ const equipo: Persona[] = [
     titulo: "Ingeniero Certificado por Toshiba",
     descripcion:
       "Apasionado por la tecnología y la eficiencia. Ivan lidera nuestra visión estratégica y desarrollo digital.",
-      fotografia: "/public/assets/team1.png",
+      fotografia: "/assets/team1.png",
   },
   {
     nombre: "Viviana Suárez",
@@ -24,7 +24,7 @@ const equipo: Persona[] = [
     titulo: "Administradora de Empresas",
     descripcion:
       "Especialista en logística y atención al cliente. Asegura que todos nuestros procesos funcionen con eficiencia y calidad.",
-      fotografia: "/public/assets/team2.png"
+      fotografia: "/assets/team2.png"
   },
   {
     nombre: "Andrés Suárez",
@@ -32,7 +32,7 @@ const equipo: Persona[] = [
     titulo: "Ingeniero de Sistemas",
     descripcion:
       "Encargado de brindar mantenimiento profesional y soluciones técnicas precisas en todos los equipos.",
-      fotografia: "/public/assets/team3.png"
+      fotografia: "/assets/team3.png"
   },
 ];
 
